@@ -1,0 +1,80 @@
+.banner{
+    background-image: linear-gradient(to right ,orange,yellow);
+    height: 100vmin;
+    max-width: 100vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4vmax;
+    color: black;
+}
+.banner >h1{
+    font: 600 1.8vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.8vmax 0;
+}
+.banner >p{
+    font-weight: 400;
+    font-size: 1.4vmax;
+    font-family: 'Roboto';
+}
+.banner >a>button{
+    margin: 0.5vmax 0;
+    background-color: black;
+    color: white;
+    padding: 0.6vmax;
+    width: 8vmax;
+    border: 2px solid black;
+    font-size: 1.2vmax;
+    border-radius: 0.3rem;
+    transition: all 0.5s;
+}
+.banner > a > button:hover{
+    transform: translateY(1vmax);
+    cursor: pointer;
+}
+.banner ::after{
+    content: "";
+    width: 100vw;
+    height: 100vmin;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    clip-path: polygon(100% 77%, 0% 100%, 100% 100%);
+}
+.homeheading{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 1px solid black;
+    width: 20vmax;
+    font: 500 1.4vmax;
+    padding: 0.4vmax;
+    margin: 1vmax auto;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 1vmax auto;
+    width: 93vw;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 15vmax;
+}
+@media only screen and (max-width : 600px) {
+    .container{
+        width: 100%;
+        margin-left: 1vmax;
+        
+    }
+    .banner{
+        
+        height: 100vmin; 
+    }
+    .homeheading{
+        width: 30vmax;
+    }
+}

@@ -1,0 +1,158 @@
+.updateProfile-heading{
+  font: 400 1.8vmax "Gill Sans";
+  color: rgba(0,0,0,0.6);
+  text-align: center;
+}
+.updateProfile-container{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.updateProfile-box{
+  border-radius: 20px;
+  width: 25%;
+  height: 60vh;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+.updateProfile-box >div > button{
+  width: 50%;
+  height: 3px;
+  background-color: tomato;
+  border: none;
+  transition: all 0.5s;
+}
+.updateProfile-form{
+  display: flex;
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2vmax;
+  transition: all 0.5s;
+
+}
+#updateProfile-image >img{
+  width: 5vmax;
+  height: 5vmax;
+  border-radius: 100%;
+}
+#updateProfile-image >input{
+  display: flex;
+  padding: 0px;
+  /* background-color: tomato; */
+}
+#updateProfile-image >input::file-selector-button{
+  cursor:pointer;
+  width: 100%;
+  z-index: 2;
+  height: 3vmax;
+  border: none;
+  outline:none;
+  margin: 0%;
+  padding:0 3vmax;
+  color: rgba(0,0,0,0,6);
+  background-color: rgb(255,255,255);
+  transition: all 0.5s;
+  font: 400 0.8vmax cursive;
+}
+#updateProfile-image >input::file-selector-button:hover{
+  background-color: rgb(235,235,235); 
+}
+.updateProfile-form >div{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.updateProfile-form >div > input{
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.267);
+  border-radius: 4px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+}
+.updateProfile-form >div > svg{
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0,0,0,0.65);
+}
+.updateProfile-form >a{
+  color: rgba(0, 0, 0, 0.54);
+  align-self: flex-end;
+  transition: all 0.5s;
+  font: 500 0.9vmax "Gill-Sans";
+  text-decoration: none;
+}
+.updateProfile-form >a:hover{
+  color: black;
+}
+.updateProfile-btn{
+  text-align: center;
+  border: none;
+  background-color: tomato;
+  color: white;
+  outline: none;
+  font: 300 0.9vmax "Roboto";
+  width: 100%;
+  padding: 1vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.219);
+
+}
+.updateProfile-btn:hover{
+  background-color: black;
+}
+@media screen and (max-width : 700px) {
+  .updateProfile-heading{
+    font: 400 2.3vmax "Gill Sans";
+    color: rgba(0,0,0,0.6);
+    text-align: center;
+  }  
+  .updateProfile-box{
+      width: 70%;
+      height: 70vh;
+
+  }
+  #updateProfile-image >input::file-selector-button{
+      
+      font: 400 1.5vmax cursive;
+  }
+  
+  
+  .updateProfile-form >div > input{
+      font: 300 1.8vmax cursive;
+      
+  }
+  .updateProfile-form >div > svg{
+     
+      font-size: 2.5vmax;
+      
+  }
+  .updateProfile-form >a{
+     
+      font: 500 1.8vmax "Gill-Sans";
+      
+  }
+  
+  .updateProfile-btn{
+      
+      font: 400 1.4vmax "Roboto";
+      
+  
+  }
+  
+} 

@@ -1,0 +1,106 @@
+.shipContainer{
+    height: 100vh;
+    max-width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    /* border:3px solid black; */
+}
+.shipBox{
+    margin: 3vmax 0;
+    /* border:3px solid black;  */
+    min-width: 25vmax;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+}
+.shipBox>h2{
+    text-align: center;
+    width: 20vmax;
+    border-bottom: 1px solid black;
+    font: 600 1.5vmax 'Franklin';
+    height: 10%;
+    margin-bottom: 2vmax;
+}
+.shipBox > form{
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.shipBox > form > div{
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.shipForm > div > input {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 90%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+
+}
+.shipForm > div > svg{
+    position: absolute;
+    transform: translateX(1vmax) translateY(0.8vmax);
+    font-size: 1.6vmax;
+    color: rgba(0,0,0,0.65);
+}
+.shipForm > div > select{
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 90%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;   
+}
+.shipBtn {
+    width: 80%;
+    background-color: tomato;
+    padding: 0.7vmax;
+    color: white;
+    border: none;
+    outline:none;
+    font: 500 1.2vmax 'Franklin';
+    cursor: pointer;
+}
+@media screen and (max-width:600px) {
+    
+    .shipForm > div > input {
+        
+        font: 300 1.6vmax 'Roboto';
+       
+    
+    }
+    .shipForm > div > svg{
+        
+        font-size: 2.5vmax;
+        
+    }
+    .shipForm > div > select{
+        
+        font: 300 1.4vmax cursive;
+           
+    }
+    .shipBtn {
+        padding: 1vmax;
+        border-radius: 1rem;
+        font: 500 1.7vmax 'Franklin';
+    }
+    
+}

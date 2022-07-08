@@ -1,0 +1,115 @@
+.prodHeading{
+    text-align: center;
+    margin-top: 6vmax;
+}
+.productContainer{    
+    margin-bottom: 10vmax;
+    width: 100%;
+    box-sizing: border-box;
+}
+.prods{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 14vmax;
+    min-height: 80vh;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0vmax;
+}
+
+.page-item{
+    background-color: white;
+    list-style: none;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,0.178);
+    padding: 1vmax 1.5vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.page-item:first-child{
+    border-radius: 5px 0 0 5px;
+}
+.page-item:last-child{
+    border-radius: 0 5px 5px 0;
+}
+.page-link{
+    text-decoration: none;
+    font: 400 0.9vmax "Roboto";
+    color: black;
+    transition: all 0.5s;
+}
+.page-item:hover{
+    background-color: rgba(230,230,230);
+}
+.page-item:hover .page-link{
+    color: rgb(0,0,0);
+}
+.pageItemActive{
+    background-color: tomato;
+}
+
+.sliderbox >fieldset{
+    border:1px solid blueviolet;
+}
+.filterbox{
+    width: 12vmax;
+    position: absolute;
+    top:15vmax;
+    left: 3vmax;
+}
+.filterbox > fieldset{
+    border: 2px dotted black;
+}
+.head{
+    text-align: center;
+}
+.catHead{
+    text-align: center;
+}
+.categoryBox{
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+.categoryField{
+    list-style: none;
+    font:400 0.9vmax 'Roboto';
+    color: black;
+    margin: 0.4vmax;
+    transition: all 0.5s;   
+}
+.categoryField:hover{
+    color: tomato;
+    font:500 1.1vmax 'Roboto';
+}
+@media screen and (max-width: 600px) {
+    .filterbox {
+      width: 30vmax;
+      position: static;
+      margin: auto;
+      font: 500 1.5vmax 'Roboto';
+    }
+    .categoryField{
+        font-size: 1.6vmax;
+    }
+  
+    .page-link {
+      font: 300 1.7vmax "Roboto";
+    }
+    .category-link {
+      font: 400 1.8vmax "Roboto";
+    }
+    .prods{
+        
+        width: 20vmax;
+    }
+  }
+  

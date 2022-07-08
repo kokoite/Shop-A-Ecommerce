@@ -1,0 +1,201 @@
+.orderDetailContainer{
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: white;
+    
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0vmax;
+    border-top: 1px solid black;
+}
+.orderDetailBox{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 7.9fr 0.1fr 4fr;
+    box-sizing: border-box;
+}
+.orderDetailBox>div:first-child{
+    display: flex;
+    flex-direction: column;
+    padding: 6vmax 0;
+}
+.orderDetailShipInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1vmax 0.5vmax;
+}
+.orderDetailShipInfo >p{
+    font: 500 1.7vmax 'Roboto';
+}
+.orderDetailShipInfoBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.7vmax 3vmax;
+}
+.orderDetailShipInfoBox>div{
+    display: flex;
+    align-items: center;
+}
+.orderDetailShipInfoBox > div > p{
+    font: 400 1.1vmax 'Roboto';
+    padding: 1vmax;
+}
+.orderDetailShipInfoBox > div > span{
+    font: 500 1.5 vmax 'Franklin';
+}
+.orderDetailLine{
+    width: 1px;
+    background-color: black;
+    min-height: 100vh;
+    height: 100%;
+}
+.orderDetailCartItems{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* border:3px solid  black; */
+    padding: 1vmax 0.5vmax;
+}
+.orderDetailCartItems > p{
+    font: 500 1.7vmax 'Franklin';
+}
+.ordersummary{
+    box-sizing: border-box;
+    width: 100%;
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5vmax 1vmax ;
+}
+.ordersummary >p{
+    font: 500 1.8vmax 'Gill-Sans';
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.orderDetailSummary{
+    display: flex;
+    flex-direction: column;
+}
+.orderDetailSummary >div{
+    font: 400 1.1vmax 'Franklin';
+    display: flex;
+    justify-content: space-between;
+    padding: 1vmax 2vmax;
+}
+.orderDetailSummary>div:last-child>p{
+    font: 600 1vmax 'Roboto';
+} 
+.ordersummary > button {
+    width: 80%;
+    background-color: tomato;
+    padding: 1vmax;
+    text-align: center;
+    font:400 1.2vmax "Robtot";
+    outline: none;
+    border: none;
+    margin: 1vmax auto;
+    color: white;
+    cursor: pointer;
+
+}
+@media screen and (max-width : 600px){
+    .orderDetailContainer{
+        min-height: 70vh;
+        height: 70vh;
+        margin-bottom: 2vmax;
+    }
+    .orderDetailBox{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .orderDetailBox>div:first-child{
+        display: flex;
+        flex-direction: column;
+        padding: 3vmax 0;
+    }
+    .orderDetailShipInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1vmax 0.5vmax;
+    }
+    .orderDetailShipInfo >p{
+        font: 600 1.8vmax 'Franklin';
+
+    }
+    .orderDetailShipInfoBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.7vmax 3vmax;
+    }
+    .orderDetailShipInfoBox>div{
+        display: flex;
+        align-items: center;
+    }
+    .orderDetailShipInfoBox > div > p{
+        font: 400 1.5vmax 'Roboto';
+        padding: 1vmax;
+    }
+    .orderDetailShipInfoBox > div > span{
+        font: 500 1.6vmax 'Franklin';
+        /* border: 2px solid black; */
+    }
+    .orderDetailLine{
+        width: 0px;
+        min-height: 0vh;
+        height: 0%;
+    }
+    .orderDetailCartItems{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 1vmax 0.5vmax;
+    }
+    .orderDetailCartItems > p{
+        font: 600 1.8vmax 'Franklin';
+        /* border: 2px solid black; */
+    }
+    .ordersummary{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 3vmax 1vmax ;
+    }
+    .ordersummary >p{
+        font: 500 1.8vmax 'Gill-Sans';
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    .orderDetailSummary{
+        display: flex;
+        flex-direction: column;
+    }
+    .orderDetailSummary >div{
+        font: 400 1.5vmax 'Franklin';
+        display: flex;
+        justify-content: space-between;
+        padding: 1vmax 2vmax;
+    }
+    .orderDetailSummary>div:last-child>p{
+        font: 600 1.6vmax 'Roboto';
+    } 
+    .ordersummary > button {
+        
+        padding: 1.4vmax;
+        border-radius: 1rem;
+        font:400 1.5vmax "Robtot";
+        
+    
+    }
+}

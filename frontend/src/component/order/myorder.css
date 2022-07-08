@@ -1,0 +1,36 @@
+.myorders{
+    min-height: 100vh;
+    background-color: white;
+    padding: 2vmax;
+    box-sizing: border-box;
+    width: 100%;
+}
+.myorders > p{
+  margin: auto;
+  font: 400 1.8vmax "Gill Sans";
+  color: rgba(0,0,0,0.6);
+  width: 20vmax;
+  text-align: center;
+  margin-bottom: 3vmax;
+  /* border-bottom: 1px solid black; */
+  
+}
+.myOrdersTable{
+    background-color: white;
+    box-shadow: 5px 4px 8px 2px #888888;
+}
+.myOrdersTable div{
+    border: none;
+    outline: none;
+}
+.MuiDataGrid-columnHeader div {
+    color: rgb(255, 255, 255);
+    font: 500 1.1vmax "Franklin" !important;
+  }
+.MuiDataGrid-columnHeader {
+    background-color: tomato;
+    padding: 1.1vmax !important;
+  }
+  .MuiDataGrid-iconSeparator {
+    display: none !important;
+  }

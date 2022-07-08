@@ -1,0 +1,27 @@
+.confirmOrderItem{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1vmax;
+}
+.confirmProd{
+    
+    display: flex;
+    align-items: center;
+}
+.confirmProd > img{
+    height: 5vmax;
+    width: 5vmax;
+    padding: 1vmax;
+}
+.confirmProd > p{
+    font: 400 1.3vmax 'Gill-Sans';
+    padding: 3vmax;
+}
+.confirmPrice{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vmax;
+}

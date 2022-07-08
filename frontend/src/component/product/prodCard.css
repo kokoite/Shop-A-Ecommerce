@@ -1,0 +1,67 @@
+.productCard{
+    width: 20vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.6s;    
+    margin: 1.5vmax 1.4vmax;
+    margin-bottom: 2vmax;
+    padding: 1vmax 0;    
+}
+.productCard >p{
+    /* text-align: center; */
+    color: black;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4vmax;
+    margin: 0.6vmax 2vmax;
+    margin-bottom: 0px;
+}
+.productCard>div{
+    
+    margin:0.5vmax 2vmax;
+    display: flex;
+    align-items: center;
+}
+.productCard>div >span{
+    padding: 0.4vmax;
+    font: 300 0.7max "Roboto";
+}
+.productCard >img{
+    align-self: center;
+    height: 18vmax;
+    width: 15vmax;
+    border-radius: 1rem;
+}
+.productCard >span{
+    margin: 0.2vmax 2vmax;
+    color: tomato;
+    font: 600 1.4vmax "Roboto";
+    margin-top: 0;
+
+}
+.productCard:hover{
+    box-shadow: 0 0 15px rgba(15,15,15,0.26);
+    border-radius: 1rem;
+    transform: translateY(1vmax);
+}
+@media only screen and (max-width:600px){
+    .productCard > div{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .productCard > p{
+        margin-top: 1vmax;
+        font-size: 2vmax;       
+    }
+    .productCard > div > span{
+        font-size: 2vmax;
+        font-weight: 600;
+    }
+    .productCard > span {
+        font-weight: 700;
+        font-size: 2vmax;
+    }
+}
